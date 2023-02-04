@@ -4,8 +4,7 @@ A Basic Quiz App created using Flutter State management provider to make an engl
 
 ## Screenshots
 Home Page
-
-![Home_Page](https://user-images.githubusercontent.com/105491470/199192136-b7bbbb13-ea13-413a-8639-343435edb089.png)
+...
 
 Question Page
 ![question_Page](https://user-images.githubusercontent.com/105491470/199192143-d147c017-ddae-4206-9c57-683072cf9dcc.png)
