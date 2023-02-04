@@ -1,13 +1,8 @@
 # Quiz App 
 
-A Basic Quiz App created using Flutter State management provider
+A Basic Quiz App created using Flutter State management provider to make an english placement test
 
 ## Screenshots
-
-Splash Screen
-
-![Splash_Screen](https://user-images.githubusercontent.com/105491470/199192610-b376d227-78c9-404d-afcc-323662f0a7ed.png)
-
 Home Page
 
 ![Home_Page](https://user-images.githubusercontent.com/105491470/199192136-b7bbbb13-ea13-413a-8639-343435edb089.png)
