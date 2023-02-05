@@ -78,8 +78,44 @@ flutter:
       - Assets/fruits.png
       - Assets/meats.png
       - Assets/vegetables.png
+      #Return and home button
       - Assets/home.png
-      - Assets/watermelon.png
+      - Assets/return.png
+      #Fruits
+      - Assets/Fruits/watermelon.png
+      - Assets/Fruits/cherry.png
+      - Assets/Fruits/apple.png
+      - Assets/Fruits/apricot.png
+      - Assets/Fruits/avocado.png
+      - Assets/Fruits/banana.png
+      - Assets/Fruits/blackberry.png
+      - Assets/Fruits/cantaloupe.png
+      - Assets/Fruits/grapes.png
+      - Assets/Fruits/kiwi.png
+      - Assets/Fruits/lemon.png
+      - Assets/Fruits/lime.png
+      - Assets/Fruits/mango.png
+      - Assets/Fruits/orange.png
+      - Assets/Fruits/papaya.png
+      - Assets/Fruits/peach.png
+      - Assets/Fruits/pineaple.png
+      - Assets/Fruits/strawberry.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       
