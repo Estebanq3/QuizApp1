@@ -10,5 +10,5 @@ List<String> questionsList = [
   'Which of these is a field that is closely related to AI?',
   'An essential field which is central to Artificial Intelligence research is?',
   'The study of computer algorithms that improve automatically through experience is termed?',
-  'Quien es la mujer mas hermosa del mundo?'
+  'Quien es la mujer mas hermosa del mundo?',
 ];

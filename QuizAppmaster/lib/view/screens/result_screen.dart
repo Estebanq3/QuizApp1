@@ -140,12 +140,12 @@ class ResultPage extends StatelessWidget {
                       animation: true,
                       radius: 70,
                       lineWidth: 13.0,
-                      percent: marksEarnedFromQuiz / 10,
+                      percent: marksEarnedFromQuiz / 11,
                       animationDuration: 1000,
                       reverse: true,
                       circularStrokeCap: CircularStrokeCap.round,
                       center: Text(
-                        "$marksEarnedFromQuiz/10",
+                        "$marksEarnedFromQuiz/11",
                         style: GoogleFonts.mulish(
                           color: Colors.black,
                           fontWeight: FontWeight.w700,
@@ -250,7 +250,7 @@ class ResultPage extends StatelessWidget {
                                 height: 60,
                                 color: Colors.white,
                                 child: Text(
-                                  'Congratulations\n You Passed the exam',
+                                  'Congratulations\n You have an excellent english level',
                                   textAlign: TextAlign.center,
                                   style: GoogleFonts.mulish(
                                     color: Colors.black,

@@ -2,12 +2,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:quizapp2/view/screens/verbs_screen.dart';
+import 'package:quizapp2/view/screens/irregular_verbs_screen.dart';
+import 'package:quizapp2/view/screens/vocabulary_screen.dart';
 import '../../controller/index_controller.dart';
 import 'home_screen.dart';
 
 //Pagina Inicial
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -61,7 +61,8 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Placement Test",
+                  "¿How do you enjoy your life?",
+                  textAlign: TextAlign.center,
                   style: GoogleFonts.mulish(
                     fontSize: 35,
                     fontWeight: FontWeight.w700,
@@ -82,7 +83,7 @@ class HomeScreen extends StatelessWidget {
                     backgroundColor: Colors.lightBlueAccent,
                   ),
                   child: Text(
-                    'Start Placement Test',
+                    'Start Test',
                     style: GoogleFonts.mulish(
                       fontSize: 18,
                       fontWeight: FontWeight.w700,
@@ -92,14 +93,16 @@ class HomeScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => SecondPage()));
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ThirdPage()));
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.lightBlueAccent,
                   ),
                   child: Text(
-                    'Review Regular and Irregular Verbs',
+                    'Review Vocabulary',
                     style: GoogleFonts.mulish(
                       fontSize: 18,
                       fontWeight: FontWeight.w700,

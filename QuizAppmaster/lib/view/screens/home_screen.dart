@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import '../../controller/index_controller.dart';
 import '../../utilities/list_of_answers.dart';
 import '../../utilities/list_of_questions.dart';
+import '../../utilities/list_of_images.dart';
 import '../Widgets/choose_an_answer_box.dart';
 import '../Widgets/option_box.dart';
 import '../Widgets/question_answer_divider.dart';
@@ -96,7 +97,9 @@ class FirstPage extends StatelessWidget {
               indexForQuestionNumber = provider.currentQuestionIndex;
 
               return QuestionBox(
-                  question: questionsList[indexForQuestionNumber]);
+                question: questionsList[indexForQuestionNumber],
+                image: imagesList[indexForQuestionNumber],
+              );
             }),
             const DividerToDivideQuestionAndAnswer(),
             const QuestionMarkIcon(),
