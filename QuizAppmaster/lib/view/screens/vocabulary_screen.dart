@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quizapp2/view/screens/fruits_screen.dart';
 import 'package:quizapp2/view/screens/start_screen.dart';
 import 'home_screen.dart';
 
@@ -29,7 +30,12 @@ class ThirdPage extends StatelessWidget {
               clipBehavior: Clip.antiAliasWithSaveLayer,
               child: InkWell(
                 splashColor: Colors.lightBlueAccent,
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const FruitsPage()));
+                },
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
