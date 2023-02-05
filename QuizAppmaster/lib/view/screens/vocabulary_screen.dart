@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quizapp2/view/screens/fruits_screen.dart';
 import 'package:quizapp2/view/screens/start_screen.dart';
-import 'home_screen.dart';
 
 // ignore: must_be_immutable
 class ThirdPage extends StatelessWidget {
@@ -11,13 +10,14 @@ class ThirdPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
+        centerTitle: true,
         title: const Text(
           "Vocabulary",
           textAlign: TextAlign.center,
         ),
       ),
       body: Center(
-          child: Container(
         child: GridView.count(
           crossAxisCount: 2,
           mainAxisSpacing: 6,
@@ -31,10 +31,8 @@ class ThirdPage extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.lightBlueAccent,
                 onTap: () {
-                  Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const FruitsPage()));
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => FruitsPage()));
                 },
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -263,7 +261,7 @@ class ThirdPage extends StatelessWidget {
             ),
           ],
         ),
-      )),
+      ),
     );
   }
 }

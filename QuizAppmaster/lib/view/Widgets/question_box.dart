@@ -13,7 +13,7 @@ class QuestionBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 20, right: 10),
-      child: Container(
+      child: SizedBox(
         width: 320,
         height: 150,
         child: Column(
@@ -27,7 +27,7 @@ class QuestionBox extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                   letterSpacing: -0.3),
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
               height: 10,
             ),

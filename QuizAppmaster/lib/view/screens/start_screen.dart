@@ -2,7 +2,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:quizapp2/view/screens/irregular_verbs_screen.dart';
 import 'package:quizapp2/view/screens/vocabulary_screen.dart';
 import '../../controller/index_controller.dart';
 import 'home_screen.dart';
