@@ -42,6 +42,7 @@ dependencies:
   insta_image_viewer: ^1.0.2
   slimy_card: ^1.0.4
   flutter_card_swiper: ^1.2.0
+  animated_flip_card: ^1.0.2
 
 dev_dependencies:
   flutter_test:
@@ -100,6 +101,64 @@ flutter:
       - Assets/Fruits/peach.png
       - Assets/Fruits/pineaple.png
       - Assets/Fruits/strawberry.png
+
+      #Vegetables
+      - Assets/Vegetables/beetroot.png
+      - Assets/Vegetables/broccoli.png
+      - Assets/Vegetables/cabbage.png
+      - Assets/Vegetables/carrots.png
+      - Assets/Vegetables/cauliflower.png
+      - Assets/Vegetables/celery.png
+      - Assets/Vegetables/cucumber.png
+      - Assets/Vegetables/eggplant.png
+      - Assets/Vegetables/garlic.png
+      - Assets/Vegetables/green_beans.png
+      - Assets/Vegetables/hotpepper.png
+      - Assets/Vegetables/lettuce.png
+      - Assets/Vegetables/mushrooms.png
+      - Assets/Vegetables/onion.png
+      - Assets/Vegetables/pepper.png
+      - Assets/Vegetables/potato.png
+      - Assets/Vegetables/pumpkin.png
+      - Assets/Vegetables/spinach.png
+
+      #Meats
+      - Assets/Meats/bacon.png
+      - Assets/Meats/chicken.png
+      - Assets/Meats/duck.png
+      - Assets/Meats/ham.png
+      - Assets/Meats/liver.png
+      - Assets/Meats/minced_pork.png
+      - Assets/Meats/mutton.png
+      - Assets/Meats/pork.png
+      - Assets/Meats/rabbit.png
+      - Assets/Meats/sausages.png
+      - Assets/Meats/turkey.png
+
+      #Meats
+      - Assets/FastFood/burger.png
+      - Assets/FastFood/chips.png
+      - Assets/FastFood/cotton_candy.png
+      - Assets/FastFood/donut.png
+      - Assets/FastFood/french_fries.png
+      - Assets/FastFood/hotdog.png
+      - Assets/FastFood/ice_cream.png
+      - Assets/FastFood/muffin.png
+      - Assets/FastFood/pancakes.png
+      - Assets/FastFood/pizza.png
+      - Assets/FastFood/popcorn.png
+      - Assets/FastFood/sandwich.png
+      - Assets/FastFood/soda.png
+
+      #Typical Food
+      - Assets/TypicalFood/arroz_con_pollo.png
+      - Assets/TypicalFood/casado.png
+      - Assets/TypicalFood/chorreada.png
+      - Assets/TypicalFood/gallo_pinto.png
+      - Assets/TypicalFood/olla_de_carne.png
+      - Assets/TypicalFood/patacones.png
+      - Assets/TypicalFood/picadillo.png
+      - Assets/TypicalFood/tamales.png
 
 
 

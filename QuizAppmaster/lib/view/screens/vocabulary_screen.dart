@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quizapp2/view/screens/fast_food_screen.dart';
 import 'package:quizapp2/view/screens/fruits_screen.dart';
+import 'package:quizapp2/view/screens/vegetables_screen.dart';
+import 'package:quizapp2/view/screens/meats_screen.dart';
+import 'package:quizapp2/view/screens/typical_food_screen.dart';
+import 'package:quizapp2/view/screens/frecuency_adverbs_screen.dart';
 import 'package:quizapp2/view/screens/start_screen.dart';
 
 // ignore: must_be_immutable
@@ -65,7 +70,12 @@ class ThirdPage extends StatelessWidget {
               clipBehavior: Clip.antiAliasWithSaveLayer,
               child: InkWell(
                 splashColor: Colors.lightBlueAccent,
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => VegetablesPage()));
+                },
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -97,7 +107,10 @@ class ThirdPage extends StatelessWidget {
               clipBehavior: Clip.antiAliasWithSaveLayer,
               child: InkWell(
                 splashColor: Colors.lightBlueAccent,
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => MeatsPage()));
+                },
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -129,7 +142,10 @@ class ThirdPage extends StatelessWidget {
               clipBehavior: Clip.antiAliasWithSaveLayer,
               child: InkWell(
                 splashColor: Colors.lightBlueAccent,
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => FastFoodPage()));
+                },
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -161,7 +177,12 @@ class ThirdPage extends StatelessWidget {
               clipBehavior: Clip.antiAliasWithSaveLayer,
               child: InkWell(
                 splashColor: Colors.lightBlueAccent,
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => TypicalFoodPage()));
+                },
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -193,7 +214,12 @@ class ThirdPage extends StatelessWidget {
               clipBehavior: Clip.antiAliasWithSaveLayer,
               child: InkWell(
                 splashColor: Colors.lightBlueAccent,
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => FrecuencyAdverbsPage()));
+                },
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [

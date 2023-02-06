@@ -569,37 +569,6 @@ class FruitsPage extends StatelessWidget {
         ],
       ),
     ),
-    Container(
-      alignment: Alignment.center,
-      color: Colors.green,
-      child: Column(
-        children: [
-          Image.asset(
-            'Assets/Fruits/apple.png',
-            width: 200,
-            height: 200,
-          ),
-          Text(
-            "Apple",
-            textAlign: TextAlign.center,
-            style: GoogleFonts.mulish(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-          Text(
-            "Manzana",
-            textAlign: TextAlign.center,
-            style: GoogleFonts.mulish(
-              fontSize: 20,
-              color: Colors.black,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-        ],
-      ),
-    ),
   ];
 
   @override
