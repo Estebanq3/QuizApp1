@@ -160,6 +160,9 @@ flutter:
       - Assets/TypicalFood/picadillo.png
       - Assets/TypicalFood/tamales.png
 
+      #Adverbs of Frecuency
+      - Assets/FrecuencyAdverbs/frecuency_adverbs_structure.png
+
 
 
 
