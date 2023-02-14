@@ -173,7 +173,7 @@ class FirstPage extends StatelessWidget {
                                       child: ListTile(
                                         onTap: () {
                                           marksForCorrectAnswers();
-                                          if (indexForQuestionNumber < 11) {
+                                          if (indexForQuestionNumber < 40) {
                                             provider.updateIndexForQuestion();
                                           } else {
                                             Navigator.push(
@@ -274,17 +274,162 @@ class FirstPage extends StatelessWidget {
       }
     }
     if (indexForQuestionNumber == 9) {
-      if (selectedOption == 3) {
-        marksObtainedFromCorrectAnswer++;
-      }
-    }
-    if (indexForQuestionNumber == 10) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
       }
     }
-    if (indexForQuestionNumber == 11) {
+    if (indexForQuestionNumber == 10) {
       if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 11) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 12) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 13) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 14) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 15) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 16) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 17) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 18) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 19) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 20) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 21) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 22) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 23) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 24) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 25) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 26) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 27) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 28) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 29) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 30) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 31) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 32) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 33) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 34) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 35) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 36) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 37) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 38) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 39) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 40) {
+      if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
       }
     }

@@ -140,12 +140,13 @@ class ResultPage extends StatelessWidget {
                       animation: true,
                       radius: 70,
                       lineWidth: 13.0,
-                      percent: marksEarnedFromQuiz / 11,
+                      percent: marksEarnedFromQuiz /
+                          40, //aumentar con numero de preguntas
                       animationDuration: 1000,
                       reverse: true,
                       circularStrokeCap: CircularStrokeCap.round,
                       center: Text(
-                        "$marksEarnedFromQuiz/11",
+                        "$marksEarnedFromQuiz/40", //aumentar con numero de preguntas
                         style: GoogleFonts.mulish(
                           color: Colors.black,
                           fontWeight: FontWeight.w700,
@@ -153,7 +154,8 @@ class ResultPage extends StatelessWidget {
                           fontSize: 15,
                         ),
                       ),
-                      progressColor: marksEarnedFromQuiz > 4
+                      progressColor: marksEarnedFromQuiz >
+                              14 //Cambiar con numero de preguntas
                           ? const Color.fromRGBO(82, 186, 0, 1)
                           : const Color.fromRGBO(254, 123, 30, 1),
                     ),
@@ -165,7 +167,7 @@ class ResultPage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      marksEarnedFromQuiz < 5
+                      marksEarnedFromQuiz < 15 //Cambiar con numero de preguntas
                           ? Container(
                               width: 150,
                               height: 40,
@@ -209,7 +211,7 @@ class ResultPage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      marksEarnedFromQuiz < 5
+                      marksEarnedFromQuiz < 15
                           ? Padding(
                               padding: const EdgeInsets.only(
                                 top: 23,
