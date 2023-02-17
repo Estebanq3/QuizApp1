@@ -40,7 +40,6 @@ dependencies:
   provider: ^6.0.4
   google_fonts: ^3.0.1
   insta_image_viewer: ^1.0.2
-  slimy_card: ^1.0.4
   flutter_card_swiper: ^1.2.0
   animated_flip_card: ^1.0.2
   flutter_launcher_icons: ^0.11.0

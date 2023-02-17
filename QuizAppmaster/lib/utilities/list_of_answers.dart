@@ -46,12 +46,61 @@ const List<String> optionOne = [
   'Papaya',
   'Garlic', // =>Correct Answer For Question NO:39
   'Cotton Candy',
+
+  //40
+  'Rabbit', // =>Correct Answer For Question NO:41
+  'Green Beans', // =>Correct Answer For Question NO:42
+  'Grapes',
+  'Stawberry',
+  'Cherry',
+  'Minced Pork',
+  'Donut',
+  'Banana',
+  'French Fries',
+  'Lettuce', // =>Correct Answer For Question NO:50
+
+  //50
+  'Mutton',
+  'Orange',
+  'Beetroot',
+  'Eggplant',
+  'French Fries',
+  'Lime',
+  'Papaya', // =>Correct Answer For Question NO:57
+  'Celery',
+  'Pineapple', // =>Correct Answer For Question NO:59
+  'Onion', // =>Correct Answer For Question NO:60
+
+  //60
+
+  'Orange',
+  'Lettuce',
+  'Apricot',
+  'Sandwich',
+  'Pork',
+  'Kiwi',
+  'Soda',
+  'never',
+  'usually', // =>Correct Answer For Question NO:69
+  'never', // =>Correct Answer For Question NO:70
+
+  //70
+  'never',
+  'always',
+  'is never', // =>Correct Answer For Question NO:73
+  'often clean', // =>Correct Answer For Question NO:74
+  'hardly helps ever',
+  'are sometimes',
+  'rarely watch', // =>Correct Answer For Question NO:77
+  'plays never',
+  'is usually',
+  'always arrive'
 ];
 const List<String> optionTwo = [
   '',
   'Apricot',
   'Rabbit',
-  'Brocolli', // =>Correct Answer For Question NO:3
+  'Broccoli', // =>Correct Answer For Question NO:3
   'Apple', // =>Correct Answer For Question NO:4
   'Garlic',
   'Chips',
@@ -95,6 +144,54 @@ const List<String> optionTwo = [
   'Tamales', // =>Correct Answer For Question NO:38
   'Sausages',
   'Lime',
+
+  //40
+  'Potato',
+  'Minced Pork',
+  'Cucumber',
+  'Hot Pepper', // =>Correct Answer For Question NO:44
+  'Apple',
+  'Pork',
+  'Pancakes',
+  'Cotton Candy',
+  'Lime', // =>Correct Answer For Question NO:49
+  'Garlic',
+
+  //50
+  'Lemon',
+  'Mango', // =>Correct Answer For Question NO:52
+  'Pumpkin',
+  'Sandwich', // =>Correct Answer For Question NO:54
+  'Burger',
+  'Apple',
+  'Pineapple',
+  'Duck',
+  'Kiwi',
+  'Pumpkin',
+
+  //60
+  'Strawberry', // =>Correct Answer For Question NO:61
+  'Green Beans',
+  'Pepper', // =>Correct Answer For Question NO:63
+  'Cotton Candy',
+  'Tomato',
+  'Pork',
+  'Beetroot', // =>Correct Answer For Question NO:67
+  'always', // =>Correct Answer For Question NO:68
+  'never',
+  'always',
+
+  //70
+  'hardly ever',
+  'often',
+  'are never',
+  'often cleans',
+  'hardly ever help',
+  '\'m sometimes', // =>Correct Answer For Question NO:76
+  'rarelys watch',
+  'played never',
+  'usually are',
+  'always arrives'
 ];
 List<String> optionThree = [
   '',
@@ -144,6 +241,54 @@ List<String> optionThree = [
   'Sausages',
   'Soda',
   'Pork',
+
+  //40
+  'Orange',
+  'Apple',
+  'Kiwi', // =>Correct Answer For Question NO:43
+  'Bacon',
+  'Hotdog',
+  'Carrots',
+  'Popcorn', // =>Correct Answer For Question NO:47
+  'Lemon', // =>Correct Answer For Question NO:48
+  'Broccoli',
+  'Papaya',
+
+  //50
+  'Mushrooms', // =>Correct Answer For Question NO:51
+  'Hotdog',
+  'Sausages',
+  'Turkey',
+  'Cantaloupe',
+  'Avocado',
+  'Muffin',
+  'Peach', // =>Correct Answer For Question NO:58
+  'Apple',
+  'Hot Pepper',
+
+  //60
+  'Sandwich',
+  'Watermelon', // =>Correct Answer For Question NO:62
+  'Broccoli',
+  'Peach',
+  'Broccoli',
+  'Ice Cream',
+  'Duck',
+  'hardly ever',
+  'sometimes',
+  'often',
+
+  //70
+  'rarely',
+  'never', // =>Correct Answer For Question NO:72
+  'never is',
+  'cleans often',
+  'helps hardly ever',
+  'sometimes are',
+  'watch rarely',
+  'never plays',
+  '\'re usually',
+  'arrived always'
 ];
 List<String> optionFour = [
   '',
@@ -193,4 +338,52 @@ List<String> optionFour = [
   'Papaya',
   'Ham',
   'Spinach',
+
+  //40
+  'Sandwich',
+  'Lemon',
+  'Mutton',
+  'Lettuce',
+  'Pizza', // =>Correct Answer For Question NO:45
+  'Sausages', // =>Correct Answer For Question NO:46
+  'Ham',
+  'Avocado',
+  'Soda',
+  'Pizza',
+
+  //50
+  'Ice Cream',
+  'Lemon',
+  'Turkey', // =>Correct Answer For Question NO:53
+  'Pork',
+  'Orange', // =>Correct Answer For Question NO:55
+  'Soda', // =>Correct Answer For Question NO:56
+  'Mushrooms',
+  'Grapes',
+  'Green Beans',
+  'Stawberry',
+
+  //60
+  'Onion',
+  'Cabbage',
+  'Soda',
+  'Potato', // =>Correct Answer For Question NO:64
+  'Pumpkin', // =>Correct Answer For Question NO:65
+  'Spinach', // =>Correct Answer For Question NO:66
+  'Carrots',
+  'sometimes',
+  'hardly Ever',
+  'usually',
+
+  //70
+  'often', // =>Correct Answer For Question NO:71
+  'usually',
+  '\'re never',
+  'clean often',
+  'hardly ever helps', // =>Correct Answer For Question NO:75
+  'sometimes be',
+  'watches rarely',
+  'never play', // =>Correct Answer For Question NO:78
+  'usually is',
+  'arrives always'
 ];

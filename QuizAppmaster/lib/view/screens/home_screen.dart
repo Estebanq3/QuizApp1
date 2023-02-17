@@ -173,7 +173,7 @@ class FirstPage extends StatelessWidget {
                                       child: ListTile(
                                         onTap: () {
                                           marksForCorrectAnswers();
-                                          if (indexForQuestionNumber < 40) {
+                                          if (indexForQuestionNumber < 80) {
                                             provider.updateIndexForQuestion();
                                           } else {
                                             Navigator.push(
@@ -430,6 +430,206 @@ class FirstPage extends StatelessWidget {
     }
     if (indexForQuestionNumber == 40) {
       if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 41) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 42) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 43) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 44) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 45) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 46) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 47) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 48) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 49) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 50) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 51) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 52) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 53) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 54) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 55) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 56) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 57) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 58) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 59) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 60) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 61) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 62) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 63) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 64) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 65) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 66) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 67) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 68) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 69) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 70) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 71) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 72) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 73) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 74) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 75) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 76) {
+      if (selectedOption == 2) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 77) {
+      if (selectedOption == 1) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 78) {
+      if (selectedOption == 4) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 79) {
+      if (selectedOption == 3) {
+        marksObtainedFromCorrectAnswer++;
+      }
+    }
+    if (indexForQuestionNumber == 80) {
+      if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
       }
     }

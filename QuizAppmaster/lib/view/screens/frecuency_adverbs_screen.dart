@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quizapp2/view/screens/start_screen.dart';
 import 'package:quizapp2/view/screens/vocabulary_screen.dart';
-import 'package:slimy_card/slimy_card.dart';
 import 'package:flutter_card_swiper/flutter_card_swiper.dart';
 import 'package:animated_flip_card/animated_flip_card.dart';
 

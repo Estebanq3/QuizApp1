@@ -45,7 +45,7 @@ class QuestionNumberIndex extends StatelessWidget {
         child: Center(
             child: Text(
           //Numero total de preguntas, estar modificando constantemente al agregar nuevas
-          '$questionNumber / 40',
+          '$questionNumber / 80',
           style: GoogleFonts.mulish(
             fontSize: 15,
             fontWeight: FontWeight.w700,
