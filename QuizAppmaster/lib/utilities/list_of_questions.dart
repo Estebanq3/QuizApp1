@@ -12,7 +12,7 @@ List<String> questionsList = [
   'What is the name of this typical food?', //question 10  casado
 
   'What is the name of this fast food?', //question 11 donut
-  'What is the name of this meats?', //question 12 duck
+  'What is the name of this meat?', //question 12 duck
   'What is the name of this typical food?', //question 13 chorreadas
   'What is the name of this vegetable?', //question 14 carrots
   'What is the name of this fruit?', //question 15 avocado

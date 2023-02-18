@@ -70,7 +70,7 @@ class FirstPage extends StatelessWidget {
           toolbarHeight: 78,
           backgroundColor: Colors.white,
           title: Text(
-            'Placement Test',
+            'Quiz',
             style: GoogleFonts.mulish(
               color: Colors.black,
               fontWeight: FontWeight.w700,

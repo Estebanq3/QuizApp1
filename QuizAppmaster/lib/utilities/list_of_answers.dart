@@ -43,7 +43,7 @@ const List<String> optionOne = [
   'Potato Tortilla', // =>Correct Answer For Question NO:35
   'Chicken',
   'Cucumber',
-  'Papaya',
+  'Apple',
   'Garlic', // =>Correct Answer For Question NO:39
   'Cotton Candy',
 
