@@ -15,7 +15,7 @@ class QuestionBox extends StatelessWidget {
       padding: const EdgeInsets.only(top: 20, right: 10),
       child: SizedBox(
         width: 320,
-        height: 150,
+        height: 140,
         child: Column(
           children: [
             Text(
@@ -23,13 +23,12 @@ class QuestionBox extends StatelessWidget {
               // 'Which of the following\n technology used by zomato for\n food delivery ?',
               textAlign: TextAlign.justify,
               style: GoogleFonts.mulish(
-                  fontSize: 18,
+                  fontSize: 16,
                   fontWeight: FontWeight.w700,
                   letterSpacing: -0.3),
             ),
-            const SizedBox(
-              width: 10,
-              height: 10,
+            SizedBox(
+              height: 8,
             ),
             InstaImageViewer(
                 child: Image.asset(

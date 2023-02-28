@@ -8,7 +8,7 @@ class DividerToDivideQuestionAndAnswer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.only(left: 30, right: 10, top: 12),
+      padding: EdgeInsets.only(left: 30, right: 10, top: 8),
       child: Divider(
         thickness: 1.2,
       ),

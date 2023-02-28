@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // ignore: must_be_immutable
-class QuestionNumberIndex extends StatelessWidget {
-  int questionNumber;
+class Score extends StatelessWidget {
+  int score;
 
-  QuestionNumberIndex({Key? key, required this.questionNumber})
-      : super(key: key);
+  Score({Key? key, required this.score}) : super(key: key);
   // int questionNumber;
 
   @override
@@ -15,17 +14,17 @@ class QuestionNumberIndex extends StatelessWidget {
       padding: const EdgeInsets.only(
         // left: 35,
         right: 250,
-        top: 10,
+        top: 1,
       ),
       child: Container(
         width: 100,
-        height: 35.08,
+        height: 30,
         decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
             boxShadow: const [
               BoxShadow(
-                color: Colors.black,
+                color: Colors.blue,
                 offset: Offset(
                   1,
                   5.0,
@@ -45,7 +44,7 @@ class QuestionNumberIndex extends StatelessWidget {
         child: Center(
             child: Text(
           //Numero total de preguntas, estar modificando constantemente al agregar nuevas
-          ' Item: $questionNumber / 80',
+          'Score: $score',
           style: GoogleFonts.mulish(
             fontSize: 15,
             fontWeight: FontWeight.w700,

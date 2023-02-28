@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:provider/provider.dart';
+import 'package:quizapp2/utilities/list_of_answers.dart';
 import '../../../controller/index_controller.dart';
 import 'start_screen.dart';
+import 'package:quizapp2/view/screens/wrong_answers_screen.dart';
 
 // ignore: must_be_immutable
 class ResultPage extends StatelessWidget {
@@ -252,7 +254,7 @@ class ResultPage extends StatelessWidget {
                                 height: 60,
                                 color: Colors.white,
                                 child: Text(
-                                  'Congratulations\n You have an excellent english level',
+                                  'Congratulations\n You have an excellent English level',
                                   textAlign: TextAlign.center,
                                   style: GoogleFonts.mulish(
                                     color: Colors.black,
@@ -266,6 +268,29 @@ class ResultPage extends StatelessWidget {
                     ],
                   )
                 ],
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => WrongAnswersPage()));
+                  print('********** respuestas incorrectas: ' +
+                      fails.toString() +
+                      ' Lenght: ' +
+                      fails.length.toString());
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.lightBlueAccent,
+                ),
+                child: Text(
+                  'See Wrong Answers',
+                  style: GoogleFonts.mulish(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white,
+                  ),
+                ),
               )
             ],
           ),

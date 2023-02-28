@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:quizapp2/utilities/list_of_answers.dart';
 import 'package:quizapp2/view/screens/vocabulary_screen.dart';
 import '../../controller/index_controller.dart';
 import 'home_screen.dart';
@@ -60,7 +61,7 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "¿How do you enjoy your life?",
+                  "How do you enjoy your life?",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.mulish(
                     fontSize: 35,
@@ -96,6 +97,8 @@ class HomeScreen extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                             builder: (context) => const ThirdPage()));
+                    fails.clear();
+                    fails_images.clear();
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.lightBlueAccent,

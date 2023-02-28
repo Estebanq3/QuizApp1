@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:quizapp2/view/Widgets/score.dart';
 import '../../controller/index_controller.dart';
 import '../../utilities/list_of_answers.dart';
 import '../../utilities/list_of_questions.dart';
@@ -66,26 +67,19 @@ class FirstPage extends StatelessWidget {
       },
       child: Scaffold(
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          toolbarHeight: 78,
-          backgroundColor: Colors.white,
-          title: Text(
-            'Quiz',
-            style: GoogleFonts.mulish(
-              color: Colors.black,
-              fontWeight: FontWeight.w700,
-              fontSize: 25,
-              letterSpacing: -0.3,
-            ),
-          ),
-          centerTitle: true,
-          elevation: 0,
-        ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
           //Main Column
           children: [
+            SizedBox(
+              height: 5,
+            ),
+            Consumer<IndexController>(builder: (context, provider, child) {
+              indexForQuestionNumber = provider.currentQuestionIndex;
+              selectedOption = provider.optionSelected;
+              return Score(score: marksObtainedFromCorrectAnswer);
+            }),
             Consumer<IndexController>(builder: (context, provider, child) {
               indexForQuestionNumber = provider.currentQuestionIndex;
               selectedOption = provider.optionSelected;
@@ -95,13 +89,14 @@ class FirstPage extends StatelessWidget {
             }),
             Consumer<IndexController>(builder: (context, provider, child) {
               indexForQuestionNumber = provider.currentQuestionIndex;
-
               return QuestionBox(
                 question: questionsList[indexForQuestionNumber],
                 image: imagesList[indexForQuestionNumber],
               );
             }),
-            const DividerToDivideQuestionAndAnswer(),
+            Divider(
+              thickness: 1.2,
+            ),
             const QuestionMarkIcon(),
             const ChooseAnAnswerBox(),
             Consumer<IndexController>(builder: (context, provider, child) {
@@ -236,402 +231,727 @@ class FirstPage extends StatelessWidget {
     if (indexForQuestionNumber == 1) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 2) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} # $indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 3) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 4) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 5) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 6) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 7) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 8) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 9) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 10) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 11) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 12) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 13) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 14) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 15) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 16) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 17) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 18) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 19) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 20) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 21) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 22) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 23) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 24) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 25) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 26) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 27) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 28) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 29) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 30) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 31) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 32) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 33) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 34) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 35) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 36) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 37) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 38) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 39) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 40) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 41) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 42) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 43) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 44) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 45) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 46) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 47) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 48) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 49) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 50) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 51) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 52) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 53) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 54) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 55) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 56) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 57) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 58) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 59) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 60) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 61) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 62) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 63) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 64) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 65) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 66) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 67) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 68) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 69) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 70) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 71) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 72) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 73) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 74) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 75) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 76) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 77) {
       if (selectedOption == 1) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionOne[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 78) {
       if (selectedOption == 4) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionFour[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 79) {
       if (selectedOption == 3) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionThree[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
     }
     if (indexForQuestionNumber == 80) {
       if (selectedOption == 2) {
         marksObtainedFromCorrectAnswer++;
+      } else {
+        fails.add(
+            'Question: ${questionsList[indexForQuestionNumber]} #Answer: ${optionTwo[indexForQuestionNumber]} #$indexForQuestionNumber');
+        fails_images.add(imagesList[indexForQuestionNumber]);
       }
+    }
+    if (marksObtainedFromCorrectAnswer > 79) {
+      fails.add('No wrong answers # # ');
+      fails_images.add('Assets/error.png');
+      fails_images.add('Assets/error.png');
     }
   }
 }

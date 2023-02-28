@@ -43,6 +43,7 @@ dependencies:
   flutter_card_swiper: ^1.2.0
   animated_flip_card: ^1.0.2
   flutter_launcher_icons: ^0.11.0
+  zoom_widget: ^2.0.1
 
 dev_dependencies:
   flutter_test:
@@ -84,6 +85,7 @@ flutter:
       - Assets/fruits.png
       - Assets/meats.png
       - Assets/vegetables.png
+      - Assets/error.png
       #Return and home button
       - Assets/home.png
       - Assets/return.png

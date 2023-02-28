@@ -9,14 +9,14 @@ const List<String> optionOne = [
   'Apricot', // =>Correct Answer For Question NO:7
   'Pineapple',
   'Rabbit',
-  'Set Meal', //// =>Correct Answer For Question NO:10
+  'Casado', //// =>Correct Answer For Question NO:10
 
   //10
   'Chips',
-  'Hotdog',
+  'Hot Dog',
   'Cauliflower',
   'Carrots', // =>Correct Answer For Question NO:14
-  'Avocado', // =>Correct Answer For Question NO:15
+  'Avocados', // =>Correct Answer For Question NO:15
   'Blackberry',
   'Watermelon',
   'Hot Pepper',
@@ -28,11 +28,11 @@ const List<String> optionOne = [
   'Lime',
   'Apricot',
   'Hot Dog', // =>Correct Answer For Question NO:24
-  'Blackberry', // =>Correct Answer For Question NO:25
+  'Blackberries', // =>Correct Answer For Question NO:25
   'Cherry',
   'Banana',
   'Popcorn',
-  'Minced Pork', // =>Correct Answer For Question NO:29
+  'Ground Meat', // =>Correct Answer For Question NO:29
   'Cantaloupe', // =>Correct Answer For Question NO:30
 
   //30
@@ -40,7 +40,7 @@ const List<String> optionOne = [
   'Mutton', // =>Correct Answer For Question NO: 32
   'Cabbage',
   'Pancakes',
-  'Potato Tortilla', // =>Correct Answer For Question NO:35
+  'Gallo de Papa', // =>Correct Answer For Question NO:35
   'Chicken',
   'Cucumber',
   'Apple',
@@ -53,7 +53,7 @@ const List<String> optionOne = [
   'Grapes',
   'Stawberry',
   'Cherry',
-  'Minced Pork',
+  'Ground Meat',
   'Donut',
   'Banana',
   'French Fries',
@@ -68,8 +68,8 @@ const List<String> optionOne = [
   'Lime',
   'Papaya', // =>Correct Answer For Question NO:57
   'Celery',
-  'Pineapple', // =>Correct Answer For Question NO:59
-  'Onion', // =>Correct Answer For Question NO:60
+  'Pineapples', // =>Correct Answer For Question NO:59
+  'Onions', // =>Correct Answer For Question NO:60
 
   //60
 
@@ -105,7 +105,7 @@ const List<String> optionTwo = [
   'Garlic',
   'Chips',
   'Cabbage',
-  'Minced Pork',
+  'Ground Meat',
   'Lemon',
   'Celery',
 
@@ -118,7 +118,7 @@ const List<String> optionTwo = [
   'Apple',
   'Carrots',
   'French Fries', // =>Correct Answer For Question NO:18
-  'Banana', // =>Correct Answer For Question NO:19
+  'Bananas', // =>Correct Answer For Question NO:19
   'Rabbit',
 
   //20
@@ -129,7 +129,7 @@ const List<String> optionTwo = [
   'Kiwi',
   'Ice Cream', // =>Correct Answer For Question NO:26
   'Burger',
-  'Plantains', // =>Correct Answer For Question NO:28
+  'Fried Green Plantains', // =>Correct Answer For Question NO:28
   'Cantaloupe',
   'Pork',
 
@@ -137,19 +137,19 @@ const List<String> optionTwo = [
   'Ice Cream',
   'Tomato',
   'Pumpkin',
-  'Eggplant', // =>Correct Answer For Question NO:34
+  'Eggplants', // =>Correct Answer For Question NO:34
   'Cabbage',
   'Garlic',
   'French Fries',
-  'Tamales', // =>Correct Answer For Question NO:38
+  'Tamal', // =>Correct Answer For Question NO:38
   'Sausages',
   'Lime',
 
   //40
   'Potato',
-  'Minced Pork',
+  'Ground Meat',
   'Cucumber',
-  'Hot Pepper', // =>Correct Answer For Question NO:44
+  'Hot Peppers', // =>Correct Answer For Question NO:44
   'Apple',
   'Pork',
   'Pancakes',
@@ -159,7 +159,7 @@ const List<String> optionTwo = [
 
   //50
   'Lemon',
-  'Mango', // =>Correct Answer For Question NO:52
+  'Mangoes', // =>Correct Answer For Question NO:52
   'Pumpkin',
   'Sandwich', // =>Correct Answer For Question NO:54
   'Burger',
@@ -170,7 +170,7 @@ const List<String> optionTwo = [
   'Pumpkin',
 
   //60
-  'Strawberry', // =>Correct Answer For Question NO:61
+  'Strawberries', // =>Correct Answer For Question NO:61
   'Green Beans',
   'Pepper', // =>Correct Answer For Question NO:63
   'Cotton Candy',
@@ -191,7 +191,7 @@ const List<String> optionTwo = [
   'rarelys watch',
   'played never',
   'usually are',
-  'always arrives'
+  'always arrives' // =>Correct Answer For Question NO:80
 ];
 List<String> optionThree = [
   '',
@@ -209,7 +209,7 @@ List<String> optionThree = [
   //10
   'Apple',
   'Spinach',
-  'Corn Pancakes', // =>Correct Answer For Question NO:13
+  'Costa Rican Corn Pancakes', // =>Correct Answer For Question NO:13
   'Strawberry',
   'Cucumber',
   'Apricot',
@@ -221,7 +221,7 @@ List<String> optionThree = [
   //20
   'Ham',
   'Stawberry',
-  'Beans & Rice', // =>Correct Answer For Question NO:23
+  'Gallo Pinto', // =>Correct Answer For Question NO:23
   'Soda',
   'Banana',
   'Cucumber', // =>Correct Answer For Question NO:27
@@ -232,8 +232,8 @@ List<String> optionThree = [
 
   //30
   'Cucumber',
-  'Hotdog',
-  'Cherry', // =>Correct Answer For Question NO:33
+  'Hot Dog',
+  'Cherries', // =>Correct Answer For Question NO:33
   'Avocado',
   'French Fries',
   'Spinach',
@@ -245,24 +245,24 @@ List<String> optionThree = [
   //40
   'Orange',
   'Apple',
-  'Kiwi', // =>Correct Answer For Question NO:43
+  'Kiwis', // =>Correct Answer For Question NO:43
   'Bacon',
-  'Hotdog',
+  'Hot Dog',
   'Carrots',
   'Popcorn', // =>Correct Answer For Question NO:47
-  'Lemon', // =>Correct Answer For Question NO:48
+  'Lemons', // =>Correct Answer For Question NO:48
   'Broccoli',
   'Papaya',
 
   //50
   'Mushrooms', // =>Correct Answer For Question NO:51
-  'Hotdog',
+  'Hot Dog',
   'Sausages',
   'Turkey',
   'Cantaloupe',
   'Avocado',
   'Muffin',
-  'Peach', // =>Correct Answer For Question NO:58
+  'Peaches', // =>Correct Answer For Question NO:58
   'Apple',
   'Hot Pepper',
 
@@ -287,7 +287,7 @@ List<String> optionThree = [
   'sometimes are',
   'watch rarely',
   'never plays',
-  '\'re usually',
+  '\'re usually', // =>Correct Answer For Question NO:79
   'arrived always'
 ];
 List<String> optionFour = [
@@ -309,7 +309,7 @@ List<String> optionFour = [
   'Peach',
   'Orange',
   'Popcorn',
-  'Beef Stew', // =>Correct Answer For Question NO:16
+  'Costa Rican Beef Stew', // =>Correct Answer For Question NO:16
   'Beans',
   'Lettuce',
   'Cucumber',
@@ -356,7 +356,7 @@ List<String> optionFour = [
   'Lemon',
   'Turkey', // =>Correct Answer For Question NO:53
   'Pork',
-  'Orange', // =>Correct Answer For Question NO:55
+  'Oranges', // =>Correct Answer For Question NO:55
   'Soda', // =>Correct Answer For Question NO:56
   'Mushrooms',
   'Grapes',
@@ -367,12 +367,12 @@ List<String> optionFour = [
   'Onion',
   'Cabbage',
   'Soda',
-  'Potato', // =>Correct Answer For Question NO:64
+  'Potatoes', // =>Correct Answer For Question NO:64
   'Pumpkin', // =>Correct Answer For Question NO:65
   'Spinach', // =>Correct Answer For Question NO:66
   'Carrots',
   'sometimes',
-  'hardly Ever',
+  'hardly ever',
   'usually',
 
   //70
@@ -387,3 +387,6 @@ List<String> optionFour = [
   'usually is',
   'arrives always'
 ];
+
+List<String> fails = [];
+List<String> fails_images = [];

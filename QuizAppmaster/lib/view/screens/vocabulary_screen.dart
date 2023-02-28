@@ -23,15 +23,13 @@ class ThirdPage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: GridView.count(
-          crossAxisCount: 2,
-          mainAxisSpacing: 6,
-          crossAxisSpacing: 6,
+        child: ListView(
+          padding: EdgeInsets.all(50),
           children: [
             Material(
               color: Colors.white,
               elevation: 8,
-              borderRadius: BorderRadius.circular(28),
+              borderRadius: BorderRadius.circular(38),
               clipBehavior: Clip.antiAliasWithSaveLayer,
               child: InkWell(
                 splashColor: Colors.lightBlueAccent,
@@ -52,7 +50,7 @@ class ThirdPage extends StatelessWidget {
                       height: 2,
                     ),
                     Text(
-                      'Fruits',
+                      'Food',
                       style: GoogleFonts.mulish(
                         fontSize: 20,
                         fontWeight: FontWeight.w700,
@@ -63,149 +61,9 @@ class ThirdPage extends StatelessWidget {
                 ),
               ),
             ),
-            Material(
-              color: Colors.white,
-              elevation: 8,
-              borderRadius: BorderRadius.circular(28),
-              clipBehavior: Clip.antiAliasWithSaveLayer,
-              child: InkWell(
-                splashColor: Colors.lightBlueAccent,
-                onTap: () {
-                  Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => VegetablesPage()));
-                },
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Ink.image(
-                      image: const AssetImage('Assets/vegetables.png'),
-                      height: 100,
-                      width: 100,
-                      fit: BoxFit.cover,
-                    ),
-                    const SizedBox(
-                      height: 2,
-                    ),
-                    Text(
-                      'Vegetables',
-                      style: GoogleFonts.mulish(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.lightBlueAccent,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Material(
-              color: Colors.white,
-              elevation: 8,
-              borderRadius: BorderRadius.circular(28),
-              clipBehavior: Clip.antiAliasWithSaveLayer,
-              child: InkWell(
-                splashColor: Colors.lightBlueAccent,
-                onTap: () {
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => MeatsPage()));
-                },
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Ink.image(
-                      image: const AssetImage('Assets/meats.png'),
-                      height: 100,
-                      width: 100,
-                      fit: BoxFit.cover,
-                    ),
-                    const SizedBox(
-                      height: 2,
-                    ),
-                    Text(
-                      'Meats',
-                      style: GoogleFonts.mulish(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.lightBlueAccent,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Material(
-              color: Colors.white,
-              elevation: 8,
-              borderRadius: BorderRadius.circular(28),
-              clipBehavior: Clip.antiAliasWithSaveLayer,
-              child: InkWell(
-                splashColor: Colors.lightBlueAccent,
-                onTap: () {
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => FastFoodPage()));
-                },
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Ink.image(
-                      image: const AssetImage('Assets/fast_food.png'),
-                      height: 100,
-                      width: 100,
-                      fit: BoxFit.cover,
-                    ),
-                    const SizedBox(
-                      height: 2,
-                    ),
-                    Text(
-                      'Fast Food',
-                      style: GoogleFonts.mulish(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.lightBlueAccent,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Material(
-              color: Colors.white,
-              elevation: 8,
-              borderRadius: BorderRadius.circular(28),
-              clipBehavior: Clip.antiAliasWithSaveLayer,
-              child: InkWell(
-                splashColor: Colors.lightBlueAccent,
-                onTap: () {
-                  Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => TypicalFoodPage()));
-                },
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Ink.image(
-                      image: const AssetImage('Assets/costa_rica_food.png'),
-                      height: 100,
-                      width: 100,
-                      fit: BoxFit.cover,
-                    ),
-                    const SizedBox(
-                      height: 2,
-                    ),
-                    Text(
-                      'Typical Food',
-                      style: GoogleFonts.mulish(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.lightBlueAccent,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+            SizedBox(
+              height: 20,
+              width: 20,
             ),
             Material(
               color: Colors.white,
@@ -234,7 +92,7 @@ class ThirdPage extends StatelessWidget {
                       height: 2,
                     ),
                     Text(
-                      'Frecuency Adverbs',
+                      'Adverbs of Frecuency',
                       style: GoogleFonts.mulish(
                         fontSize: 20,
                         fontWeight: FontWeight.w700,
@@ -245,6 +103,10 @@ class ThirdPage extends StatelessWidget {
                   ],
                 ),
               ),
+            ),
+            SizedBox(
+              height: 20,
+              width: 20,
             ),
             Material(
               color: Colors.white,

@@ -9,14 +9,14 @@ class QuestionMarkIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 20,
-      width: 30,
+      width: 20,
       decoration: const BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.all(Radius.circular(20)),
       ),
       child: Image.asset(
         'Assets/logo_quiz_app.png',
-        fit: BoxFit.cover,
+        fit: BoxFit.fill,
       ),
     );
   }

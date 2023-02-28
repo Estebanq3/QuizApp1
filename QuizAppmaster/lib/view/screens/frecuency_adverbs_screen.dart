@@ -71,7 +71,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 240,
                 height: 80,
                 child: Text(
-                  'Hourly. daily, weekly, monthly, yearly',
+                  'Hourly, daily, weekly, monthly, yearly',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -101,7 +101,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 240,
                 height: 80,
                 child: Text(
-                  'once, twice, once or twice, three times',
+                  'Once, twice, once or twice, three times',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -145,7 +145,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 285,
                 height: 80,
                 child: Text(
-                  'Typically go in END position',
+                  'Typically go in END position.',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -155,50 +155,89 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 ),
               ),
               Container(
-                alignment: Alignment.center,
-                color: Colors.blueAccent,
-                width: 285,
-                height: 80,
-                child: Text(
-                  'Example 1: Most companies pay taxes yearly',
-                  style: GoogleFonts.mulish(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.blueAccent,
+                  width: 285,
+                  height: 80,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Example 1: Most companies pay taxes',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        TextSpan(
+                          text: ' yearly.',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber,
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
               Container(
-                alignment: Alignment.center,
-                color: Colors.lightBlueAccent,
-                width: 285,
-                height: 80,
-                child: Text(
-                  'Example 2: The manager checks the toilets every hour.',
-                  style: GoogleFonts.mulish(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.lightBlueAccent,
+                  width: 285,
+                  height: 80,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Example 2: The manager checks the toilets',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        TextSpan(
+                          text: ' every hour.',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber,
+                          ),
+                        ),
+                      ],
+                    ),
+                  )),
               Container(
-                alignment: Alignment.center,
-                color: Colors.lightBlue,
-                width: 285,
-                height: 80,
-                child: Text(
-                  'Example 3: The directors meet weekly to review progress.',
-                  style: GoogleFonts.mulish(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.lightBlue,
+                  width: 285,
+                  height: 80,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Example 3: The directors meet',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        TextSpan(
+                          text: ' weekly.',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber,
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
             ],
           ),
         ),
@@ -234,7 +273,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 300,
                 height: 140,
                 child: Text(
-                  'Sometimes, usually for reasons of emphasis or style, some adverbs of definite frequency may go at the FRONT',
+                  'Sometimes, usually for reasons of emphasis or style, some adverbs of definite frequency may go at the FRONT.',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -244,20 +283,31 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 ),
               ),
               Container(
-                alignment: Alignment.center,
-                color: Colors.lightBlueAccent,
-                width: 300,
-                height: 140,
-                child: Text(
-                  'Example: Every day, more than five thousand people die on our roads.',
-                  style: GoogleFonts.mulish(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.lightBlueAccent,
+                  width: 300,
+                  height: 140,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Every day',
+                          style: TextStyle(fontSize: 20, color: Colors.amber),
+                        ),
+                        TextSpan(
+                          text:
+                              ', more than five thousand people die on our roads.',
+                          style: TextStyle(fontSize: 20), //<-- SEE HERE
+                        ),
+                      ],
+                    ),
+                  )),
             ],
           ),
         ),
@@ -282,7 +332,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
       alignment: Alignment.center,
       color: Colors.lightBlueAccent,
       width: 100,
-      height: 80,
+      height: 100,
       child: Material(
         color: Colors.blue,
         elevation: 8,
@@ -306,9 +356,9 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 alignment: Alignment.center,
                 color: Colors.white,
                 width: 240,
-                height: 120,
+                height: 40,
                 child: Text(
-                  '100% : Always, constantly, usually, normally, frequently, regularly, often',
+                  '100%',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -321,9 +371,9 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 alignment: Alignment.center,
                 color: Colors.lightBlueAccent,
                 width: 240,
-                height: 120,
+                height: 340,
                 child: Text(
-                  '50% : Sometimes, occasionally, infrequently, seldom, hardly ever',
+                  'Always \n Constantly \n Usually \n Normally \n Frequently \n Regularly \n Often \n Sometimes \n Occasionally \n Infrequently \n Seldom \n Hardly ever \n Never',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -336,9 +386,9 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 alignment: Alignment.center,
                 color: Colors.blue,
                 width: 240,
-                height: 80,
+                height: 40,
                 child: Text(
-                  '0% : Never',
+                  '0%',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -379,10 +429,10 @@ class FrecuencyAdverbsPage extends StatelessWidget {
               Container(
                 alignment: Alignment.center,
                 color: Colors.white,
-                width: 285,
+                width: 300,
                 height: 150,
                 child: Text(
-                  'Adverbs of indefinite frequency mainly go in MID position in the sentence. They go before the main verb (except the main verb "to be"):',
+                  'Adverbs of indefinite frequency mainly go in MID position in the sentence. They go before the main verb (except the main verb "to be", which precedes the adverb):',
                   style: GoogleFonts.mulish(
                     fontSize: 18,
                     fontWeight: FontWeight.w900,
@@ -392,50 +442,107 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 ),
               ),
               Container(
-                alignment: Alignment.center,
-                color: Colors.blueAccent,
-                width: 285,
-                height: 60,
-                child: Text(
-                  'Example 1: We usually go shopping on Saturday.',
-                  style: GoogleFonts.mulish(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.blueAccent,
+                  width: 300,
+                  height: 60,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Example 1: We ',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        TextSpan(
+                          text: 'usually',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber,
+                          ),
+                        ),
+                        TextSpan(
+                          text: ' go shopping on Saturday.',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
               Container(
-                alignment: Alignment.center,
-                color: Colors.lightBlueAccent,
-                width: 285,
-                height: 60,
-                child: Text(
-                  'Example 2: I have often done that.',
-                  style: GoogleFonts.mulish(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.lightBlueAccent,
+                  width: 300,
+                  height: 60,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Example 2: I have ',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        TextSpan(
+                          text: 'often',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber,
+                          ),
+                        ),
+                        TextSpan(
+                          text: ' done that.',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
               Container(
-                alignment: Alignment.center,
-                color: Colors.lightBlue,
-                width: 285,
-                height: 60,
-                child: Text(
-                  'Example 3: She is always late.',
-                  style: GoogleFonts.mulish(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.lightBlue,
+                  width: 300,
+                  height: 60,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Example 3: She is ',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        TextSpan(
+                          text: 'always',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber,
+                          ),
+                        ),
+                        TextSpan(
+                          text: ' late.',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
             ],
           ),
         ),
@@ -481,35 +588,65 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 ),
               ),
               Container(
-                alignment: Alignment.center,
-                color: Colors.blueAccent,
-                width: 285,
-                height: 60,
-                child: Text(
-                  'Example 1: Sometimes they come and stay with us.',
-                  style: GoogleFonts.mulish(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.blueAccent,
+                  width: 285,
+                  height: 60,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Example 1: ',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        TextSpan(
+                          text: 'Sometimes ',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'they come and stay with us.',
+                          style: TextStyle(fontSize: 20),
+                        )
+                      ],
+                    ),
+                  )),
               Container(
-                alignment: Alignment.center,
-                color: Colors.lightBlueAccent,
-                width: 285,
-                height: 60,
-                child: Text(
-                  'Example 2: I play tennis occasionally.',
-                  style: GoogleFonts.mulish(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.lightBlueAccent,
+                  width: 285,
+                  height: 60,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Example 2: I play tennis ',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        TextSpan(
+                          text: 'occasionally.',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber,
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
             ],
           ),
         ),
@@ -555,35 +692,68 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 ),
               ),
               Container(
-                alignment: Alignment.center,
-                color: Colors.blueAccent,
-                width: 285,
-                height: 60,
-                child: Text(
-                  'Example 1: We see them rarely.',
-                  style: GoogleFonts.mulish(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.blueAccent,
+                  width: 285,
+                  height: 60,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Example 1: We see them ',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        TextSpan(
+                          text: 'rarely.',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber,
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
               Container(
-                alignment: Alignment.center,
-                color: Colors.lightBlueAccent,
-                width: 285,
-                height: 60,
-                child: Text(
-                  'Example 2: John eats meat very seldom.',
-                  style: GoogleFonts.mulish(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.black,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+                  alignment: Alignment.center,
+                  color: Colors.lightBlueAccent,
+                  width: 285,
+                  height: 60,
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      style: GoogleFonts.mulish(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.black,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'Example 2: John eats meat ',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        TextSpan(
+                          text: 'very ',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.green,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'seldom.',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber,
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
             ],
           ),
         ),
@@ -600,8 +770,8 @@ class FrecuencyAdverbsPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              width: 350,
-              height: 450,
+              width: 400,
+              height: 520,
               color: Colors.white,
               child: DefaultTextStyle(
                 style: const TextStyle(),
