@@ -73,12 +73,12 @@ List<String> questionsList = [
   'What is this?', //question 65 pumpkin
   'What is this?', //question 66 spinach
   'What is this?', //question 67 beetroot
-  'Someone who likes to play soccer all the time: I _____ play soccer after school.', //question 68 always
+  'Someone who likes to play soccer a lot: I _____ play soccer after school.', //question 68 always
   'Teachers that worry too much about your education: My teachers _____  give homework on Friday.', //question 69 usually
   'Someone who doesn\'t like to watch movies at all: I _____ go to the movies on weekends.', //question 70 never
   'A best friend who likes to spend time with you: My best friend _____ comes to my house on the weekend.', //question 71 often
   'A responsible student: I\'m _____ late for school or work.', //question 72 never
-  'Our teacher, Mrs Jones, _____ (never/be) late for lessons.', //question 73 is never
+  'Our teacher, Mrs Jones, _____ (never/be) late for class.', //question 73 is never
   'I _____ (often/clean) my bedroom on the weekend.', //question 74 often clean
   'My brother _____ (hardly ever / help) me with my homework.', //question 75 hardly ever helps
   'I _____ (sometimes/be) bored in Math lessons.', //question 76 \'m sometimes

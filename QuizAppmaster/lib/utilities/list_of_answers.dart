@@ -3,7 +3,7 @@ const List<String> optionOne = [
   'Chips', // =>Correct Answer For Question NO:1
   'Apple',
   'Sandwich',
-  'French Fries',
+  'Rabbit',
   'Bacon', // =>Correct Answer For Question NO:5
   'Soda',
   'Apricot', // =>Correct Answer For Question NO:7
@@ -12,15 +12,15 @@ const List<String> optionOne = [
   'Casado', //// =>Correct Answer For Question NO:10
 
   //10
-  'Chips',
+  'Avocado',
   'Hot Dog',
-  'Cauliflower',
+  'Cauliflowers',
   'Carrots', // =>Correct Answer For Question NO:14
   'Avocados', // =>Correct Answer For Question NO:15
   'Blackberry',
   'Watermelon',
-  'Hot Pepper',
-  'Liver',
+  'Hot Peppers',
+  'Cauliflowers',
   'Tomato',
 
   //20
@@ -31,18 +31,18 @@ const List<String> optionOne = [
   'Blackberries', // =>Correct Answer For Question NO:25
   'Cherry',
   'Banana',
-  'Popcorn',
+  'Tomatoes',
   'Ground Meat', // =>Correct Answer For Question NO:29
   'Cantaloupe', // =>Correct Answer For Question NO:30
 
   //30
   'Muffin', // =>Correct Answer For Question NO: 31
   'Mutton', // =>Correct Answer For Question NO: 32
-  'Cabbage',
+  'Cabbages',
   'Pancakes',
   'Gallo de Papa', // =>Correct Answer For Question NO:35
-  'Chicken',
-  'Cucumber',
+  'Peppers',
+  'Cucumbers',
   'Apple',
   'Garlic', // =>Correct Answer For Question NO:39
   'Cotton Candy',
@@ -51,32 +51,32 @@ const List<String> optionOne = [
   'Rabbit', // =>Correct Answer For Question NO:41
   'Green Beans', // =>Correct Answer For Question NO:42
   'Grapes',
-  'Stawberry',
+  'Stawberries',
   'Cherry',
-  'Ground Meat',
+  'Oranges',
   'Donut',
-  'Banana',
-  'French Fries',
+  'Bananas',
+  'Tomato',
   'Lettuce', // =>Correct Answer For Question NO:50
 
   //50
-  'Mutton',
-  'Orange',
+  'Cherries',
+  'Oranges',
   'Beetroot',
   'Eggplant',
   'French Fries',
   'Lime',
   'Papaya', // =>Correct Answer For Question NO:57
-  'Celery',
+  'Blueberries',
   'Pineapples', // =>Correct Answer For Question NO:59
   'Onions', // =>Correct Answer For Question NO:60
 
   //60
 
-  'Orange',
+  'Oranges',
   'Lettuce',
   'Apricot',
-  'Sandwich',
+  'Sandwiches',
   'Pork',
   'Kiwi',
   'Soda',
@@ -98,12 +98,12 @@ const List<String> optionOne = [
 ];
 const List<String> optionTwo = [
   '',
-  'Apricot',
+  'Apricots',
   'Rabbit',
   'Broccoli', // =>Correct Answer For Question NO:3
   'Apple', // =>Correct Answer For Question NO:4
   'Garlic',
-  'Chips',
+  'Banana',
   'Cabbage',
   'Ground Meat',
   'Lemon',
@@ -112,11 +112,11 @@ const List<String> optionTwo = [
   //10
   'Donut', // =>Correct Answer For Question NO:11
   'Muffin',
-  'Cantaloupe',
-  'Cucumber',
-  'Potato',
+  'Cantaloupes',
+  'Cucumbers',
+  'Potatoes',
   'Apple',
-  'Carrots',
+  'Carrot',
   'French Fries', // =>Correct Answer For Question NO:18
   'Bananas', // =>Correct Answer For Question NO:19
   'Rabbit',
@@ -126,7 +126,7 @@ const List<String> optionTwo = [
   'Celery', // =>Correct Answer For Question NO:22
   'Apple',
   'Watermelon',
-  'Kiwi',
+  'Kiwis',
   'Ice Cream', // =>Correct Answer For Question NO:26
   'Burger',
   'Fried Green Plantains', // =>Correct Answer For Question NO:28
@@ -136,44 +136,44 @@ const List<String> optionTwo = [
   //30
   'Ice Cream',
   'Tomato',
-  'Pumpkin',
+  'Pumpkins',
   'Eggplants', // =>Correct Answer For Question NO:34
   'Cabbage',
-  'Garlic',
+  'Carrots',
   'French Fries',
   'Tamal', // =>Correct Answer For Question NO:38
-  'Sausages',
+  'Sausage',
   'Lime',
 
   //40
   'Potato',
-  'Ground Meat',
-  'Cucumber',
+  'Radishes',
+  'Cucumbers',
   'Hot Peppers', // =>Correct Answer For Question NO:44
   'Apple',
-  'Pork',
-  'Pancakes',
-  'Cotton Candy',
+  'Grapes',
+  'Pancake',
+  'Pineapples',
   'Lime', // =>Correct Answer For Question NO:49
   'Garlic',
 
   //50
-  'Lemon',
+  'Lemons',
   'Mangoes', // =>Correct Answer For Question NO:52
   'Pumpkin',
   'Sandwich', // =>Correct Answer For Question NO:54
-  'Burger',
+  'Burgers',
   'Apple',
   'Pineapple',
-  'Duck',
-  'Kiwi',
-  'Pumpkin',
+  'Green beans',
+  'Kiwis',
+  'Pumpkins',
 
   //60
   'Strawberries', // =>Correct Answer For Question NO:61
-  'Green Beans',
+  'Kiwi',
   'Pepper', // =>Correct Answer For Question NO:63
-  'Cotton Candy',
+  'Cauliflowers',
   'Tomato',
   'Pork',
   'Beetroot', // =>Correct Answer For Question NO:67
@@ -195,7 +195,7 @@ const List<String> optionTwo = [
 ];
 List<String> optionThree = [
   '',
-  'Ice Cream',
+  'Cucumbers',
   'Chicken Fried Rice', // =>Correct Answer For Question NO:2
   'Strawberry',
   'Cantaloupe',
@@ -210,12 +210,12 @@ List<String> optionThree = [
   'Apple',
   'Spinach',
   'Costa Rican Corn Pancakes', // =>Correct Answer For Question NO:13
-  'Strawberry',
-  'Cucumber',
+  'Strawberries',
+  'Cucumbers',
   'Apricot',
   'Cauliflower', // =>Correct Answer For Question NO:17
-  'Pumpkin',
-  'Cabbage',
+  'Pumpkins',
+  'Cabbages',
   'Rice',
 
   //20
@@ -223,7 +223,7 @@ List<String> optionThree = [
   'Stawberry',
   'Gallo Pinto', // =>Correct Answer For Question NO:23
   'Soda',
-  'Banana',
+  'Bananas',
   'Cucumber', // =>Correct Answer For Question NO:27
   'Cucumber',
   'Green Beans',
@@ -234,19 +234,19 @@ List<String> optionThree = [
   'Cucumber',
   'Hot Dog',
   'Cherries', // =>Correct Answer For Question NO:33
-  'Avocado',
-  'French Fries',
-  'Spinach',
-  'Chicken',
-  'Sausages',
+  'Avocados',
+  'Onion',
+  'Onions',
+  'Zucchinis',
+  'Sausage',
   'Soda',
   'Pork',
 
   //40
   'Orange',
-  'Apple',
+  'Apples',
   'Kiwis', // =>Correct Answer For Question NO:43
-  'Bacon',
+  'Eggplants',
   'Hot Dog',
   'Carrots',
   'Popcorn', // =>Correct Answer For Question NO:47
@@ -256,21 +256,21 @@ List<String> optionThree = [
 
   //50
   'Mushrooms', // =>Correct Answer For Question NO:51
-  'Hot Dog',
-  'Sausages',
+  'Hot Dogs',
+  'Sausage',
   'Turkey',
-  'Cantaloupe',
+  'Cantaloupes',
   'Avocado',
   'Muffin',
   'Peaches', // =>Correct Answer For Question NO:58
-  'Apple',
-  'Hot Pepper',
+  'Apples',
+  'Hot Peppers',
 
   //60
-  'Sandwich',
+  'Sandwiches',
   'Watermelon', // =>Correct Answer For Question NO:62
   'Broccoli',
-  'Peach',
+  'Peaches',
   'Broccoli',
   'Ice Cream',
   'Duck',
@@ -292,7 +292,7 @@ List<String> optionThree = [
 ];
 List<String> optionFour = [
   '',
-  'Pumpkin',
+  'Pumpkins',
   'Watermelon',
   'Muffin',
   'Banana',
@@ -306,13 +306,13 @@ List<String> optionFour = [
   //10
   'Orange',
   'Duck', // =>Correct Answer For Question NO:12
-  'Peach',
-  'Orange',
-  'Popcorn',
+  'Peaches',
+  'Oranges',
+  'Mushrooms',
   'Costa Rican Beef Stew', // =>Correct Answer For Question NO:16
-  'Beans',
-  'Lettuce',
-  'Cucumber',
+  'Ham',
+  'Blackberries',
+  'Cucumbers',
   'Ham', // =>Correct Answer For Question NO:20
 
   //20
@@ -320,18 +320,18 @@ List<String> optionFour = [
   'Apple',
   'Pepper',
   'Mutton',
-  'Ice Cream',
+  'Oranges',
   'Liver',
   'Mango',
-  'Cabbage',
+  'Cabbages',
   'Blackberry',
   'Cherry',
 
   //30
   'Banana',
   'Banana',
-  'Cauliflower',
-  'Ice Cream',
+  'Cauliflowers',
+  'Grapes',
   'Burger',
   'Grapes', // =>Correct Answer For Question NO:36
   'Pancakes', // =>Correct Answer For Question NO:37
@@ -341,36 +341,36 @@ List<String> optionFour = [
 
   //40
   'Sandwich',
-  'Lemon',
-  'Mutton',
-  'Lettuce',
+  'Lemons',
+  'Cabbages',
+  'Peppers',
   'Pizza', // =>Correct Answer For Question NO:45
   'Sausages', // =>Correct Answer For Question NO:46
   'Ham',
-  'Avocado',
+  'Avocados',
   'Soda',
   'Pizza',
 
   //50
-  'Ice Cream',
-  'Lemon',
+  'Avocados',
+  'Lemons',
   'Turkey', // =>Correct Answer For Question NO:53
   'Pork',
   'Oranges', // =>Correct Answer For Question NO:55
   'Soda', // =>Correct Answer For Question NO:56
-  'Mushrooms',
+  'Mushroom',
   'Grapes',
   'Green Beans',
-  'Stawberry',
+  'Stawberries',
 
   //60
-  'Onion',
+  'Onions',
   'Cabbage',
   'Soda',
   'Potatoes', // =>Correct Answer For Question NO:64
   'Pumpkin', // =>Correct Answer For Question NO:65
   'Spinach', // =>Correct Answer For Question NO:66
-  'Carrots',
+  'Carrot',
   'sometimes',
   'hardly ever',
   'usually',

@@ -1363,7 +1363,7 @@ class FruitsPage extends StatelessWidget {
             ),
           ),
           Text(
-            "Brocoli",
+            "Brócoli",
             textAlign: TextAlign.center,
             style: GoogleFonts.mulish(
               fontSize: 20,

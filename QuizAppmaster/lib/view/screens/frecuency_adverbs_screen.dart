@@ -71,7 +71,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 240,
                 height: 80,
                 child: Text(
-                  'Hourly, daily, weekly, monthly, yearly',
+                  'hourly, daily, weekly, monthly, yearly',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -86,7 +86,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 240,
                 height: 80,
                 child: Text(
-                  'Every second, once a minute, twice a year',
+                  'every second, once a minute, twice a year',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -101,7 +101,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 240,
                 height: 80,
                 child: Text(
-                  'Once, twice, once or twice, three times',
+                  'once, twice, once or twice, three times',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -145,7 +145,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 285,
                 height: 80,
                 child: Text(
-                  'Typically go in END position.',
+                  'Typically go in END position',
                   style: GoogleFonts.mulish(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
@@ -302,7 +302,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                         ),
                         TextSpan(
                           text:
-                              ', more than five thousand people die on our roads.',
+                              ' more than five thousand people die on our roads.',
                           style: TextStyle(fontSize: 20), //<-- SEE HERE
                         ),
                       ],
@@ -432,7 +432,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 300,
                 height: 150,
                 child: Text(
-                  'Adverbs of indefinite frequency mainly go in MID position in the sentence. They go before the main verb (except the main verb "to be", which precedes the adverb):',
+                  'Adverbs of indefinite frequency mainly go in MID position in the sentence. They go before the main verb (except the main verb "to be," which precedes the adverb).',
                   style: GoogleFonts.mulish(
                     fontSize: 18,
                     fontWeight: FontWeight.w900,
@@ -578,7 +578,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 285,
                 height: 150,
                 child: Text(
-                  'Occasionally, sometimes, often, frequently and usually can also go at the beginning or end of a sentence:',
+                  'Occasionally, sometimes, often, frequently and usually can also go at the beginning or end of a sentence.',
                   style: GoogleFonts.mulish(
                     fontSize: 18,
                     fontWeight: FontWeight.w900,
@@ -682,7 +682,7 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                 width: 285,
                 height: 150,
                 child: Text(
-                  'Rarely and seldom can also go at the end of a sentence (often with "very"):',
+                  'Rarely and seldom can also go at the end of a sentence (often with "very").',
                   style: GoogleFonts.mulish(
                     fontSize: 18,
                     fontWeight: FontWeight.w900,
@@ -710,7 +710,14 @@ class FrecuencyAdverbsPage extends StatelessWidget {
                           style: TextStyle(fontSize: 20),
                         ),
                         TextSpan(
-                          text: 'rarely.',
+                          text: 'very ',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.green,
+                          ),
+                        ),
+                        TextSpan(
+                          text: ' rarely.',
                           style: TextStyle(
                             fontSize: 20,
                             color: Colors.amber,
