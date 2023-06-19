@@ -86,6 +86,8 @@ flutter:
       - Assets/meats.png
       - Assets/vegetables.png
       - Assets/error.png
+      - Assets/TCU658.png
+      - Assets/facultad_letras_logo.png
       #Return and home button
       - Assets/home.png
       - Assets/return.png

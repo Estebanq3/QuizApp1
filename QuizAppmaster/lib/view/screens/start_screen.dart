@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:quizapp2/utilities/list_of_answers.dart';
 import 'package:quizapp2/view/screens/vocabulary_screen.dart';
+import 'package:quizapp2/view/screens/instructions_screen.dart';
 import '../../controller/index_controller.dart';
 import 'home_screen.dart';
 
@@ -73,44 +74,106 @@ class HomeScreen extends StatelessWidget {
                     width: 150,
                     height: 300,
                     child: Image.asset('Assets/logo_quiz_app_2.png')),
-                ElevatedButton(
-                  onPressed: () {
-                    provider.restartIndexForQuestion();
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => FirstPage()));
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.lightBlueAccent,
-                  ),
-                  child: Text(
-                    'Start Test',
-                    style: GoogleFonts.mulish(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
+                Container(
+                  width: 200,
+                  height: 40,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => InstructionsScreen()));
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.lightBlueAccent,
+                    ),
+                    child: Text(
+                      'Instructions',
+                      style: GoogleFonts.mulish(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const ThirdPage()));
-                    fails.clear();
-                    fails_images.clear();
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.lightBlueAccent,
-                  ),
-                  child: Text(
-                    'Review Vocabulary',
-                    style: GoogleFonts.mulish(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
+                SizedBox(height: 5),
+                Container(
+                  width: 200,
+                  height: 40,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ThirdPage()));
+                      fails.clear();
+                      fails_images.clear();
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.lightBlueAccent,
+                    ),
+                    child: Text(
+                      'Review Vocabulary',
+                      style: GoogleFonts.mulish(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
+                ),
+                SizedBox(height: 5),
+                Container(
+                  width: 200,
+                  height: 40,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      provider.restartIndexForQuestion();
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => FirstPage()));
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.lightBlueAccent,
+                    ),
+                    child: Text(
+                      'Start Test',
+                      style: GoogleFonts.mulish(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(width: 20, height: 20),
+                Row(
+                  children: [
+                    Expanded(
+                        child: SizedBox(
+                      width: 0.5,
+                    )),
+                    Expanded(
+                        child: SizedBox(
+                            width: 150,
+                            height: 100,
+                            child: Image.asset('Assets/UCR_icon.png'))),
+                    Expanded(
+                        child: SizedBox(
+                            width: 150,
+                            height: 100,
+                            child: Image.asset('Assets/TCU658.png'))),
+                    Expanded(
+                        child: SizedBox(
+                            width: 150,
+                            height: 100,
+                            child: Image.asset(
+                                'Assets/facultad_letras_logo.png'))),
+                    Expanded(
+                        child: SizedBox(
+                      width: 0.5,
+                    ))
+                  ],
                 )
               ],
             ),
